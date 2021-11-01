@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WKZLIKE</title>
+        <style>
+            *{
+                margin:0;
+                padding:0
+            }
+            .from {
+                overflow:hidden;
+                position:relative;
+            }
+            .bgc {
+                width: 100%;
+                height: 100%;
+            }
+            .submit {
+                position:absolute;
+                z-index:10;
+                right:0;
+                left:0;
+                top:0;
+                bottom:0;
+                margin:auto;
+                margin-top: 400px;
+                font-size: 18px;
+                width: 650px;
+                height: 700px;
+                background:#848a84a2;
+                border-radius: 10px;
+                color: #0c0c0c;
+                display: flex;
+                flex-direction: column;
+            }
+            .form_title {
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 10px;
+                font-size: 30px;
+                color: #0a0641;
+            }
+            .form_input {
+                padding: 0 40px;
+                box-sizing: border-box;
+                display: flex;
+                margin-top: 20px;
+            }
+            .inputs {
+                height: 40px;
+                width: 350px;
+                border-radius: 50px;
+                border: none;
+                background-color: #eee;
+                color: rgb(15, 15, 15);
+                padding-left: 20px;
+            }
+            .hobby{
+                height: 15px;
+                width: 30px;
+                margin-top: 10px;
+            }
+            .sex_input{
+                padding: 0 40px;
+                margin-top: 20px;
+            }
+            .choose{
+                height: 40px;
+                width: 90px;
+                border-radius: 50px;
+                padding-left: 20px;
+            }
+            .button_input {
+                margin-top: 40px;
+                margin-inline-start:280px;
+            }
+            .button_submit{
+                text-align:center;
+                font-size: 22px;
+                width: 100px;
+                height: 40px;
+                color: rgb(0, 0, 0);
+                border-radius: 50px;
+                background:#ffee04;
+            }
+            .button_submit:hover {
+                background: #04ffffd3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="from">
+            <img class="bgc" src="./img1.jpg" alt="">
+            <div class="submit">
+                <span class="form_title"><font size="7"><b>学生信息统计表</b></font></span>
+                <div class="form_input">
+                    <span><font size="5">姓名：</font></span>
+                    <input class="inputs" type="text">
+                </div>
+                <div class="form_input">
+                    <span><font size="5">班级：</font></span>
+                    <input class="inputs" type="test">
+                </div>
+                <div class="sex_input">
+                    <span><font size="5">性别：</font></span>
+                    <input type="radio" name="sex" checked><font size="5">男</font>
+                    <input type="radio" name="sex"><label><font size="5">女</font>
+                </div>
+                <div class="form_input">
+                    <span><font size="5">学号：</font></span>
+                    <input class="inputs" type="text">
+                </div>
+                <div class="form_input">
+                    <span><font size="5">院系：</font></span>
+                    <input class="inputs" type="text">
+                </div>
+                <div class="form_input">
+                    <span><font size="5">专业：</font></span>
+                    <input class="inputs" type="text">
+                </div>
+                <div class="form_input">
+                    <span><font size="5">地区：</font></span>
+                    <select class="choose">
+                    <option>北京</option>
+                    <option>天津</option>
+                    <option>上海</option>
+                    <option>重庆</option>
+                    <option>内蒙古</option>
+                    <option>广西</option>
+                    <option>西藏</option>
+                    <option>宁夏</option>
+                    <option>新疆</option>
+                    <option>香港</option>
+                    <option>澳门</option>
+                    <option>河北</option>
+                    <option>山西</option>
+                    <option>辽宁</option>
+                    <option>吉林</option>
+                    <option>黑龙江</option>
+                    <option>江苏</option>
+                    <option>浙江</option>
+                    <option>安徽</option>
+                    <option>福建</option>
+                    <option>江西</option>
+                    <option>山东</option>
+                    <option>河南</option>
+                    <option>湖北</option>
+                    <option>湖南</option>
+                    <option>广东</option>
+                    <option>海南</option>
+                    <option>四川</option>
+                    <option>贵州</option>
+                    <option>云南</option>
+                    <option>陕西</option>
+                    <option>甘肃</option>
+                    <option>青海</option>
+                    <option>台湾</option>
+                    </select>
+                </div>
+                <div class="form_input">
+                    <span><font size="5">兴趣爱好：</font></span>
+                    <label><input class="hobby" type="checkbox">运动</label>
+                    <label><input class="hobby" type="checkbox">听音乐</label>
+                    <label><input class="hobby" type="checkbox">看电影</label>
+                    <label><input class="hobby" type="checkbox">写代码</label>
+                    <label><input class="hobby" type="checkbox">读书</label>
+                    <label><input class="hobby" type="checkbox">旅行</label>
+                </div>
+                <div class="button_input">
+                    <input class="button_submit" type="submit" value="提交">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
